@@ -32,7 +32,7 @@ namespace Groove_Down
 			Program.API = new GrooveAPI.GrooveAPI();
 			Program.API.WorkerCompleted += new GrooveAPI.APIWorkerCompletedEventHandler(API_RunWorkerCompleted);			
 			Program.API.StartConnect();						
-		}
+		}		
 
 		void serverCheckThread()
 		{
@@ -76,7 +76,7 @@ namespace Groove_Down
 				results.Focus();
 			}
 			else if (e.Type == GrooveAPI.WorkerType.GAPI_TYPE_CONNECTOR)
-			{
+			{								
 				tbQuery.Enabled = true;
 				tbQuery.Text = "";
 				tbQuery.Focus();

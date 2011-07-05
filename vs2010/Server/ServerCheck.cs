@@ -48,6 +48,6 @@ namespace Groove_Down.Server
 			res.Close();
 		}
 
-		const string location = "http://www.imperish.com/gd/files/program.xml";
+		const string location = "http://www.imperish.com/assets/gdver.xml";
 	}
 }

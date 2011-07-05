@@ -19,7 +19,7 @@ namespace Groove_Down
 		}
 
 		static public GrooveAPI.GrooveAPI API;
-		static public string Version = "1.2";
+		static public string Version = "1.3";
 		static public string ServerVersion = "";				
 		static public bool DownloadsCancelled;
 	}

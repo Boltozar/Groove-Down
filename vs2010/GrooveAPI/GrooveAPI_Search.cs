@@ -123,9 +123,11 @@ namespace GrooveAPI
 						songData.Popularity.Album = Convert.ToDouble(songDict["AlbumPopularity"]);
 						songData.Popularity.Artist = Convert.ToDouble(songDict["ArtistPopularity"]);
 						songData.Verification.General = Convert.ToInt32(songDict["IsVerified"]) == 1 ? true : false;
-						songData.Verification.Song = Convert.ToInt32(songDict["SongVerified"]) == 1 ? true : false;
-						songData.Verification.Album = Convert.ToInt32(songDict["AlbumVerified"]) == 1 ? true : false;
-						songData.Verification.Artist = Convert.ToInt32(songDict["ArtistVerified"]) == 1 ? true : false;
+            // These no longer exist...
+            songData.Verification.Song = false;
+            songData.Verification.Album = false;
+            songData.Verification.Artist = false;
+            // ------------------------
 						songData.Misc.CoverArtFileName = songDict["CoverArtFilename"].ToString();
 						
 						string tracknum = songDict["TrackNum"].ToString() == "" ? "0" : songDict["TrackNum"].ToString();
